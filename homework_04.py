@@ -65,9 +65,11 @@ print(tom_h)
 
 """count words starting with uppercase"""
 
-tom_upper = [upper for upper in adwentures_of_tom_sawer if upper.isupper()]
+words = adwentures_of_tom_sawer.split()
 
-print('Кількість великих літер:', len(tom_upper))
+tom_upper = [word for word in words if word.istitle()]
+
+print('Кількість слів з великої літери:', len(tom_upper))
 
 # task 06
 """ Виведіть позицію, на якій слово Tom зустрічається вдруге
@@ -85,7 +87,7 @@ print(tom_second)
 Збережіть результат у змінній adwentures_of_tom_sawer_sentences
 """
 """split text by sentence"""
-adwentures_of_tom_sawer_sentences = tom_final.split('.')
+adwentures_of_tom_sawer_sentences = tom_final.split('. ')
 
 
 # task 08
