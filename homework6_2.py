@@ -1,11 +1,6 @@
-"""find a sum of all even numbers."""
+"""loop that waits until user write a word with letter "h"."""
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+user_h = input('Enter a word with letter "h" in it: ')
 
-sum_num = 0
-
-for num in numbers:
-    if num % 2 == 0:
-        sum_num += num
-
-print(sum_num)
+while 'h' not in user_h.lower():
+    user_h = input('Please make sure its a word with letter "h" in it: ')
