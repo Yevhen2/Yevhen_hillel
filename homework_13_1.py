@@ -32,7 +32,7 @@ file2_data = download_csv(file2_url)
 """Merge data from two files."""
 merged_data = file1_data + file2_data
 
-"""Duplicate removal"""
+"""Duplicate removal."""
 unique_data = []
 seen = set()
 
